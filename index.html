@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOTEL GP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>MAMATA HOTELS AND RESTURANT</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">MENU <i class="fas fa-bars"></i></span>
+            </div>
+        </div>
+
+        <div class="head-bottom flex">
+            <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+            <p>It is establishment that offers temporary lodging and accommodations to travelers, tourists, and
+                visitors. It is vary in size, style, and amenities, ranging from budget motels to luxury resorts. </p>
+            <button type="button" class="head-btn">GET STARTED</button>
+        </div>
+    </header>
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fas fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#rooms">rooms</a></li>
+            <li><a href="#customers">customers</a></li>
+        </ul>
+        <button class="btn sign-up">sign up</button>
+        <button class="btn log-in">log in</button>
+    </div>
+    <div id="modal"></div>
+
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>services</h2>
+        </div>
+        <div class="services-container">
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-utensils"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Food Service/ Food Runner</h2>
+                    <p> Our food service refers to the process of preparing, serving, and delivering food and beverages
+                        to customers in a restaurant or other dining establishment. It involves various tasks and roles,
+                        each contributing to the overall dining experience. Food service can encompass a range of
+                        positions, such as cooks, chefs, servers, bussers, and food runners. The main goal of food
+                        service is to provide high-quality, timely, and enjoyable meals to guests.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-swimming-pool"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>Our refreshment is refers to the act of renewing or revitalizing something, often to restore its
+                        energy, vitality, or freshness. The term is commonly used in various contexts to describe
+                        different aspects of renewal or revitalization
+                        Physical Refreshment: This refers to the act of renewing one's energy or relieving fatigue
+                        through rest, food, or drink. For example, having a snack or a drink can provide physical
+                        refreshment during a break from work.
+                    </p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-broom"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>
+                        Our housekeeping refers to the maintenance and organization of a living or working space to
+                        ensure that it is clean, orderly, and functional. It involves a range of tasks that are aimed at
+                        keeping an environment safe, pleasant, and efficient to live or work in. Housekeeping is
+                        essential in both residential and commercial settings, including homes, hotels, offices,
+                        hospitals, and other public spaces.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fas fa-door-closed"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Room Security</h2>
+                    <p> A luxury room can vary depending on the specific hotel, resort, or lodging establishment.
+                        However, here are some common facilities and amenities that you might find in a luxury room:
+
+                        Spacious Layout: Luxury rooms often offer larger living spaces, providing ample room to relax
+                        and move around.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="chekin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="chekout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div>
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img1.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            High-Quality Bedding.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Upscale Furnishings.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Private Balcony or Terrace.
+                        </li>
+                    </ul>
+                    <p>Depending on the hotel, luxury room guests might have access to private lounges with
+                        complimentary refreshments and snacks.</p>
+                    <p>Luxury rooms often offer stunning views of the surrounding landscapes, city skylines, or
+                        picturesque environments.</p>
+                    <p class="rate">
+                        <span> NRS 2500 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img2.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            In-Room Dining.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Coffee/Tea Making Facilities.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Entertainment Systems.
+                        </li>
+                    </ul>
+                    <p>Some luxury rooms provide complimentary access to on-site fitness centers, spa facilities, or
+                        wellness areas.</p>
+                    <p>Luxury rooms feature upscale furniture, stylish decor, and attention to detail in interior
+                        design.</p>
+                    <p class="rate">
+                        <span>NRS 3000 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+            <article class="room">
+                <div class="room-image">
+                    <img src="images/img3.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h3>Luxury Rooms</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Complimentary Services.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            Access to Exclusive Areas.
+                        </li>
+                        <li>
+                            <i class="fas fa-arrow-alt-circle-right"></i>
+                            High-Speed Internet.
+                        </li>
+                    </ul>
+                    <p>Luxury rooms are often more spacious than standard rooms, allowing guests to enjoy a comfortable
+                        and relaxing environment.</p>
+                    <p> Expect top-notch mattresses, high-thread-count linens, and a selection of pillows for a
+                        luxurious sleep experience.</p>
+                    <p class="rate">
+                        <span>NRS 3500 /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">book now</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>customers</h2>
+            </div>
+            <div class="customers-container">
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>We Loved it</h3>
+                    <p>A high satisfaction ratings, or special features that guests particularly enjoy. Essentially,
+                        it's a way for the establishment to highlight a room that has been well-received by previous
+                        guests, enticing potential guests to choose that specific room type for their stay.</p>
+                    <img src="images/cus1.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Comfortable Living</h3>
+                    <p>A state or condition in which an individual or a group of people experience ease, contentment,
+                        and a high degree of satisfaction in their living environment. It encompasses various aspects of
+                        physical and psychological well-being that contribute to a sense of comfort and happiness in
+                        one's daily life.</p>
+                    <img src="images/cus2.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="fas fa-star"></i></span>
+                        <span><i class="far fa-star"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>A "nice place" in a hotel room refers to a pleasant and appealing area within the room that
+                        enhances the overall guest experience. This term typically encompasses a specific location or
+                        feature within the room that stands out for its comfort, aesthetics, functionality, or other
+                        positive attributes.</p>
+                    <img src="images/cus3.jpg" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us </h2>
+                <p>We are provides well-managed rooms, 24 hours Free WI-FI services and extra entertainment activities.
+                </p>
+                <ul class="social-icons">
+                    <li class="flex">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </li>
+                    <li class="flex">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>Privacy</h2>
+                <a href="#">Career</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+
+            <div>
+                <h2>Have A Question</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span>
+                        Panitanki-10,Birgunj
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-phone-alt"></i>
+                    </span>
+                    <span>
+                        9845426284
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span>
+                        mamata1276@gmail.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
